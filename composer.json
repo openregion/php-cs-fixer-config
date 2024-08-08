@@ -1,0 +1,24 @@
+{
+	"name": "openregion/php-cs-fixer-config",
+	"description": "PHP CS Fixer shared config",
+	"license": "proprietary",
+	"keywords": [
+		"php",
+		"code",
+		"standard",
+		"fixer",
+		"config"
+	],
+	"require" : {
+		"friendsofphp/php-cs-fixer": "^3.62",
+		"php": "^8.1"
+	},
+	"require-dev" : {
+		"roave/security-advisories" : "dev-latest"
+	},
+	"autoload": {
+		"psr-4": {
+			"OpenRegion\\PhpCsFixerConfig\\": "src/"
+		}
+	}
+}
