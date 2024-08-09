@@ -4,7 +4,7 @@
 ## Установка
 Рекомендуется установить пакет через [Composer](https://getcomposer.org/).
 ```bash
-composer require --dev php-cs-fixer-config
+composer require --dev openregion/php-cs-fixer-config
 ```
 
 ## Как пользоваться
