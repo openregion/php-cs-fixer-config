@@ -17,10 +17,10 @@ composer require --dev openregion/php-cs-fixer-config
     ```php
     <?php
 
+    use OpenRegion\PhpCsFixerConfig\BitrixFinder;
     use OpenRegion\PhpCsFixerConfig\Config;
-    use OpenRegion\PhpCsFixerConfig\Finder;
 
-    $finder = (new Finder())
+    $finder = (new BitrixFinder())
       ->in(__DIR__);
 
     return (new Config())
