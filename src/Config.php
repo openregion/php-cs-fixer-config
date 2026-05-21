@@ -48,15 +48,7 @@ class Config extends BaseConfig
     // A single space or none should be between cast and variable.
     'cast_spaces' => ['space' => 'none'],
     // Class, trait and interface elements must be separated with one or none blank line.
-    'class_attributes_separation' => [
-      'elements' => [
-        'const' => 'only_if_meta',
-        'method' => 'one',
-        'property' => 'only_if_meta',
-        'trait_import' => 'none',
-        'case' => 'one',
-      ],
-    ],
+    'class_attributes_separation' => ['elements' => ['method' => 'one']],
     // When referencing an internal class it must be written using the correct casing.
     'class_reference_name_casing' => true,
     // Namespace must not contain spacing, comments or PHPDoc.
@@ -139,8 +131,6 @@ class Config extends BaseConfig
     'native_type_declaration_casing' => true,
     // Master functions shall be used instead of aliases.
     'no_alias_functions' => ['sets' => ['@internal']],
-    // Master language constructs shall be used instead of aliases.
-    'no_alias_language_construct_call' => true,
     // Replace control structure alternative syntax to use braces.
     'no_alternative_syntax' => ['fix_non_monolithic_code' => false],
     // There should not be a binary flag before strings.
