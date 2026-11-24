@@ -101,12 +101,16 @@ class Config extends BaseConfig
     'implode_call' => true,
     // Include/Require and file path should be divided with a single space. File path should not be placed within parentheses.
     'include' => true,
+    // Use post-increment and post-decrement when the expression value is unused.
+    'increment_style' => ['style' => 'post'],
     // Integer literals must be in correct case.
     'integer_literal_case' => true,
     // Replaces `is_null($var)` expression with `null === $var`.
     'is_null' => true,
     // Lambda must not import variables it doesn't use.
     'lambda_not_used_import' => true,
+    // Start code on a new line after the PHP opening tag.
+    'linebreak_after_opening_tag' => true,
     // List (`array` destructuring) assignment should be declared using the configured syntax.
     'list_syntax' => true,
     // Use `&&` and `||` logical operators instead of `and` and `or`.
@@ -131,6 +135,8 @@ class Config extends BaseConfig
     'native_type_declaration_casing' => true,
     // Master functions shall be used instead of aliases.
     'no_alias_functions' => ['sets' => ['@internal']],
+    // Use canonical language constructs instead of their aliases.
+    'no_alias_language_construct_call' => true,
     // Replace control structure alternative syntax to use braces.
     'no_alternative_syntax' => ['fix_non_monolithic_code' => false],
     // There should not be a binary flag before strings.
@@ -241,6 +247,8 @@ class Config extends BaseConfig
     ],
     // Orders the interfaces in an `implements` or `interface extends` clause.
     'ordered_interfaces' => true,
+    // Sort trait use statements alphabetically.
+    'ordered_traits' => true,
     // Sort union types and intersection types using configured order.
     'ordered_types' => ['null_adjustment' => 'always_last', 'sort_algorithm' => 'alpha'],
     // PHPUnit annotations should be a FQCNs including a root namespace.
@@ -249,6 +257,8 @@ class Config extends BaseConfig
     'php_unit_internal_class' => true,
     // Enforce camel (or snake) case for PHPUnit test methods, following configuration.
     'php_unit_method_casing' => true,
+    // Match PHPUnit's protected visibility for setUp() and tearDown().
+    'php_unit_set_up_tear_down_visibility' => true,
     // PHPDoc should contain `@param` for all params.
     'phpdoc_add_missing_param_annotation' => true,
     // All items of the given PHPDoc tags must be either left-aligned or (by default) aligned vertically.
@@ -263,6 +273,8 @@ class Config extends BaseConfig
     'phpdoc_no_alias_tag' => true,
     // Removes duplicate PHPDoc types.
     'phpdoc_no_duplicate_types' => true,
+    // Remove @package and @subpackage annotations from PHPDoc.
+    'phpdoc_no_package' => true,
     // Classy that does not inherit must not have `@inheritdoc` tags.
     'phpdoc_no_useless_inheritdoc' => true,
     // Annotations in PHPDoc should be ordered in defined sequence.
@@ -287,6 +299,8 @@ class Config extends BaseConfig
     'phpdoc_single_line_var_spacing' => true,
     // Fixes casing of PHPDoc tags.
     'phpdoc_tag_casing' => true,
+    // Write @inheritDoc as an inline PHPDoc tag.
+    'phpdoc_tag_type' => ['tags' => ['inheritdoc' => 'inline']],
     // Docblocks should only be used on structural elements.
     'phpdoc_to_comment' => ['ignored_tags' => ['todo', 'global', 'var']],
     // PHPDoc should start and end with content, excluding the very first and last line of the docblocks.

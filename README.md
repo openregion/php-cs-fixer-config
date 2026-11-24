@@ -13,6 +13,8 @@ composer require --dev openregion/php-cs-fixer-config
 По умолчанию задан набор правил, указанный в [\OpenRegion\PhpCsFixerConfig\Config::BASE_RULES](./src/Config.php). На проекте могут быть заданы дополнительные правила через метод [\OpenRegion\PhpCsFixerConfig\Config::setRules()](./src/Config.php). Для удобного просмотра правил можно использовать [специальную страницу](https://mlocati.github.io/php-cs-fixer-configurator/).
 
 ## Как пользоваться
+Для Laravel-проекта используйте `OpenRegion\PhpCsFixerConfig\LaravelFinder` вместо `BitrixFinder` в примере ниже. Он добавляет к фильтрам `BaseFinder` исключения Laravel Pint 1.29.3 для служебных каталогов, IDE-хелперов, Blade-шаблонов и скрытых файлов и каталогов.
+
 1. Создать в корне проекта файл конфигурации `.php-cs-fixer.dist.php` с содержимым:
     ```php
     <?php
