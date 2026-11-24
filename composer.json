@@ -1,7 +1,7 @@
 {
 	"name": "openregion/php-cs-fixer-config",
 	"description": "PHP CS Fixer shared config",
-	"license": "proprietary",
+	"license": "MIT",
 	"keywords": [
 		"php",
 		"code",
